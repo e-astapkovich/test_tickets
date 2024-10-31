@@ -38,12 +38,14 @@ function handle_order($event_id, $event_date, $ticket_adult_price, $ticket_adult
 function book_tickets(array $data): string
 {
     $api_url = "https://api.site.com/book";
+    // бизнес-логика обработки данных перед отправкой в апи
     $response = mock_send_request($url, $data);
 }
 
 function approve_tickets(int $data): string
 {
     $api_url = "https://api.site.com/approve";
+    // бизнес-логика обработки данных перед отправкой в апи
     $response = mock_send_request($url, $data);
 }
 
